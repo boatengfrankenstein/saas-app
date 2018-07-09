@@ -15,7 +15,7 @@ Milia.setup do |config|
 # true if action after signing out is to return to the home (root) page
 # false to return to the sign-in form (devise default)
   config.signout_to_root = true
-
+  config.whitelist_tenant_params = [:plan]
 # true if you are using airbrake to be notified of exceptions
   # be sure to include the gem 'airbrake' in your Gemfile
 # false if you do not
